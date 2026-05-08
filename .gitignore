@@ -1,0 +1,39 @@
+```gitignore
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Django database
+db.sqlite3
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
+
+# Static collected files
+staticfiles/
+
+# Python build files
+*.egg-info/
+dist/
+build/
+
+# Node modules
+node_modules/
+
+# Tailwind generated cache/logs
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Pytest cache
+.pytest_cache/
