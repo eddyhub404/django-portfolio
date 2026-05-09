@@ -17,13 +17,17 @@
             Django Backend Developer
         </p>
 
-        <button class="mt-8 px-8 py-4 bg-purple-600 rounded-xl hover:bg-purple-700 text-xl">
-            View Projects
-        </button>
+        
+        <a href="{% url 'projects' %}" class="inline-block mt-8 px-8 py-4 bg-purple-600 rounded-xl hover:bg-purple-700 text-xl">
+  View Projects
+</a>
 
     </div>
 
 </section>
+
+{% comment %} ABOUT SECTION {% endcomment %}
+
 
 <section id="about" class="bg-black text-white py-32 px-10">
 
