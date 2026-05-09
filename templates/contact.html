@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block title %}
-  Home - My Portfolio
+  Contact
 {% endblock %}
 {% include 'includes/navbar.html' %}
 {% block content %}
@@ -8,6 +8,7 @@
     <h2 class="text-5xl font-bold mb-12">Contact Me</h2>
 
     <form class="max-w-2xl mx-auto">
+      {% csrf_token %}
       <div class="mb-6">
         <label class="block mb-2 text-lg">Your Name</label>
 

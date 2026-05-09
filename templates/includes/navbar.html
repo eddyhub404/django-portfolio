@@ -1,11 +1,12 @@
 {% load static %}
 <nav class="flex justify-between items-center px-10 py-6 text-white absolute top-0 w-full z-50">
 
-  <a href="/">
+  <a href="/" title="EddyHub">
     <img 
         src="{% static 'images/logo.png' %}" 
         alt="logo"
         class="w-14 h-14 object-contain"
+        
     >
 </a>
 
@@ -16,7 +17,8 @@
     </li>
 
     <li>
-        <a href="#about">About</a>
+        <a href="/#about">About</a>
+        
     </li>
 
     <li>
@@ -27,6 +29,15 @@
         <a href="/contact/">Contact</a>
     </li>
 
-</ul>   
+</ul>
+
+<button 
+    disabled
+    class="bg-purple-700 px-5 py-2 rounded-xl opacity-50 cursor-not-allowed"
+>
+    CV (Adding Soon)
+</button>
+
+
 
 </nav>
