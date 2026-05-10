@@ -1,43 +1,43 @@
 {% load static %}
-<nav class="flex justify-between items-center px-10 py-6 text-white absolute top-0 w-full z-50">
 
-  <a href="/" title="EddyHub">
-    <img 
-        src="{% static 'images/logo.png' %}" 
-        alt="logo"
-        class="w-14 h-14 object-contain"
-        
-    >
-</a>
+<!-- NAVBAR -->
+<nav class="absolute top-0 left-0 w-full z-50 px-10 py-6 text-white">
 
-    <ul class="flex gap-10 text-xl">
+    <div class="flex items-center justify-between">
 
-    <li>
-        <a href="/">Home</a>
-    </li>
+        <!-- LEFT -->
+        <a href="/" title="EddyHub">
+            <img 
+                src="{% static 'images/logo.png' %}" 
+                alt="logo"
+                class="w-14 h-14 object-contain"
+            >
+        </a>
 
-    <li>
-        <a href="/#about">About</a>
-        
-    </li>
+        <!-- CENTER -->
+        <ul class="flex gap-10 text-xl">
+            <li><a href="/">Home</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
 
-    <li>
-        <a href="/projects/">Projects</a>
-    </li>
+        <!-- EMPTY DIV -->
+        <div class="w-14"></div>
 
-    <li>
-        <a href="/contact/">Contact</a>
-    </li>
-
-</ul>
-
-<button 
-    disabled
-    class="bg-purple-700 px-5 py-2 rounded-xl opacity-50 cursor-not-allowed"
->
-  Resume (Coming Soon)  
-</button>
-
-
+    </div>
 
 </nav>
+
+
+{% comment %} <!-- RESUME BUTTON -->
+<div class="absolute top-8 right-10 z-50">
+    
+    <button 
+        disabled
+        class="bg-purple-700 px-5 py-2 rounded-xl opacity-50 cursor-not-allowed text-white"
+    >
+        Resume (Coming Soon)
+    </button> {% endcomment %}
+
+</div>
